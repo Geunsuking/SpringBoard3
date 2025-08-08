@@ -48,7 +48,7 @@
 	    <td>Userid</td>
 	    <td>Username</td>
 	    <td>Email</td>
-	    <td>Upoint</td>
+	    <td>등급</td>
 	    <td>Indate</td>
 	    <td>삭제</td>
 	    <td>수정</td>
@@ -62,11 +62,11 @@
 	
 	  <c:forEach  var="user" items = "${ userList }" >
 	  <tr>
-	    <td>${ user.userid   }</td>
-	    <td>${ user.username }</td>
-	    <td>${ user.email    }</td>	   
-	    <td>${ user.upoint   }</td>	   
-	    <td>${ user.indate   }</td>	   
+	    <td>${ user.userid    }</td>
+	    <td>${ user.username  }</td>
+	    <td>${ user.email     }</td>	   
+	    <td>${ user.memlevel  }</td>	   
+	    <td>${ user.indate    }</td>	   
 	    <td><a href="/Users/Delete?userid=${user.userid}">삭제</a></td>
 	    <td><a href="/Users/UpdateForm?userid=${user.userid}">수정</a></td>
 	  </tr>
